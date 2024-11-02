@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:keep="@drawable/shimmer_background">
+
+    <item>
+        <!-- Base background color -->
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorShimmer"/>
+        </shape>
+    </item>
+
+    <item>
+        <!-- Gradient for shimmer effect -->
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#E0E0E0"
+                android:centerColor="#F5F5F5"
+                android:endColor="#E0E0E0"
+                android:angle="0"
+                android:type="linear" />
+        </shape>
+    </item>
+</layer-list>

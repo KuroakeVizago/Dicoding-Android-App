@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:iconSpaceReserved="false"
+    tools:keep="@xml/preferences">
+
+    <!-- Dark Mode Toggle -->
+    <androidx.preference.SwitchPreferenceCompat
+        android:key="dark_mode"
+        android:title="@string/dark_mode"
+        android:summary="@string/dark_mode_hint"
+        android:defaultValue="false"
+        app:iconSpaceReserved="false" />
+
+    <!-- Notification Toggle -->
+    <androidx.preference.SwitchPreferenceCompat
+        android:key="notifications"
+        android:title="@string/notifications"
+        android:summary="@string/notifications_hint"
+        android:defaultValue="true"
+        app:iconSpaceReserved="false" />
+</androidx.preference.PreferenceScreen>

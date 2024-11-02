@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Primary and secondary colors -->
+    <color name="colorPrimary">#2D3E50</color> <!-- Dicoding's signature blue -->
+    <color name="colorPrimaryVariant">#2D3E50</color> <!-- A darker variant of primary -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White text/icons on primary color -->
+    <color name="colorOnPrimary2">#BDBDBD</color> <!-- White text/icons on primary color -->
+    <color name="colorShimmer" tools:keep="@color/colorShimmer">#C5CAD3</color>
+
+    <color name="colorSecondary">#FF6F00</color> <!-- Secondary color for accents -->
+    <color name="colorSecondaryVariant">#FF8F00</color> <!-- A lighter variant of secondary -->
+    <color name="colorOnSecondary">#FFFFFF</color> <!-- White text/icons on secondary color -->
+
+    <!-- Background and surface colors -->
+    <color name="colorBackground">#F5F5F5</color> <!-- Light gray background -->
+    <color name="colorBackgroundDark">#1E2935</color> <!-- Light gray background -->
+    <color name="colorOnBackground">#18181B</color> <!-- Dark text/icons on background -->
+
+    <color name="colorSurface">#FFFFFF</color> <!-- White surface color for cards, etc. -->
+    <color name="colorOnSurface">#212121</color> <!-- Dark text/icons on surface color -->
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/navigation_home"
+    tools:keep="@navigation/mobile_navigation">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.kuroakevizago.dicodingapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_upcoming"
+        android:name="com.kuroakevizago.dicodingapp.ui.upcoming.UpcomingFragment"
+        android:label="@string/title_upcoming"
+        tools:layout="@layout/fragment_upcoming" />
+
+    <fragment
+        android:id="@+id/navigation_finished"
+        android:name="com.kuroakevizago.dicodingapp.ui.finished.FinishedFragment"
+        android:label="@string/title_finished"
+        tools:layout="@layout/fragment_finished" />
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.kuroakevizago.dicodingapp.ui.favorite.FavoriteFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.kuroakevizago.dicodingapp.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

@@ -1,0 +1,40 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DicodingApp</string>
+    <string name="title_home" tools:keep="@string/title_home">Home</string>
+    <string name="title_upcoming" tools:keep="@string/title_upcoming">Upcoming</string>
+    <string name="title_finished" tools:keep="@string/title_finished">Finished</string>
+    <string name="dicoding_event" tools:keep="@string/dicoding_event">Dicoding Event</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="open_event_link" tools:keep="@string/open_event_link">Open Event Link</string>
+    <string name="dicoding_finished_event" tools:keep="@string/dicoding_finished_event">Dicoding Finished Event</string>
+    <string name="dicoding_upcoming_event" tools:keep="@string/dicoding_upcoming_event">Dicoding Upcoming Event</string>
+    <string name="error_message_1" tools:keep="@string/error_message_1">Something went wrong</string>
+    <string name="try_again" tools:keep="@string/try_again">Try Again</string>
+    <string name="search">Search</string>
+    <string name="no_events_found" tools:keep="@string/no_events_found">No Events Found!</string>
+    <!-- Preference Titles -->
+    <string name="messages_header" tools:keep="@string/messages_header">Messages</string>
+    <string name="sync_header" tools:keep="@string/sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title" tools:keep="@string/signature_title">Your signature</string>
+    <string name="reply_title" tools:keep="@string/reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title" tools:keep="@string/sync_title">Sync email periodically</string>
+    <string name="attachment_title" tools:keep="@string/attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on" tools:keep="@string/attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off" tools:keep="@string/attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" tools:keep="@string/hello_blank_fragment">Hello blank fragment</string>
+    <string name="dark_mode" tools:keep="@string/dark_mode">Dark Mode</string>
+    <string name="notifications" tools:keep="@string/notifications">Notifications</string>
+    <string name="dark_mode_hint" tools:keep="@string/dark_mode_hint">Enable or disable dark mode</string>
+    <string name="notifications_hint" tools:keep="@string/notifications_hint">Enable or disable app notifications</string>
+    <string name="dicoding_favorite_event" tools:keep="@string/dicoding_favorite_event">Favorite Events</string>
+    <string name="title_favorite" tools:keep="@string/title_favorite">Favorite</string>
+    <string name="title_settings" tools:keep="@string/title_settings">Settings</string>
+    <string name="dicoding_settings" tools:keep="@string/dicoding_settings">Settings</string>
+    <string name="enable_notification" tools:keep="@string/enable_notification">Enable Notification</string>
+</resources>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/shimmer_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="invisible">
+            <include
+                android:id="@+id/shimmer_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/activity_detail_shimmer"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/error_detail_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible">
+            <include
+                android:id="@+id/error_detail_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/error_retry"/>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_event_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:src="@tools:sample/avatars"
+                android:scaleType="fitCenter"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/tv_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/img_event_icon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="center_vertical"
+                tools:text="This is an Event Title that is too long and trying to expand"
+                style="@style/TextAppearance.Dicoding.Headline"/>
+
+            <TextView
+                android:id="@+id/tv_event_owner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/tv_event_title"
+                app:layout_constraintStart_toStartOf="@id/tv_event_title"
+                app:layout_constraintEnd_toEndOf="@id/tv_event_title"
+                android:gravity="center_vertical"
+                tools:text="Event Owner: Test"
+                style="@style/TextAppearance.Dicoding.Headline2"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_event_quota"
+                app:layout_constraintBottom_toBottomOf="@id/tv_event_time"
+                app:layout_constraintEnd_toStartOf="@id/tv_event_time"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_time_foreground"
+                android:importantForAccessibility="no"
+                app:tint="?attr/colorOnPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_event_time"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_event_quota"
+                app:layout_constraintStart_toStartOf="@id/tv_event_quota"
+                app:layout_constraintEnd_toEndOf="@id/tv_event_title"
+                android:gravity="center_vertical"
+                tools:text="29/10/2024 08:10"
+                style="@style/TextAppearance.Dicoding.Headline2"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_event_owner"
+                app:layout_constraintBottom_toBottomOf="@id/tv_event_quota"
+                app:layout_constraintStart_toStartOf="@id/tv_event_title"
+                app:layout_constraintEnd_toStartOf="@id/tv_event_quota"
+                android:foregroundGravity="center_vertical"
+                android:src="@drawable/ic_group_people_foreground"
+                android:importantForAccessibility="no"
+                app:tint="?attr/colorOnPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_event_quota"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="50dp"
+                app:layout_constraintStart_toStartOf="@id/tv_event_title"
+                app:layout_constraintTop_toBottomOf="@+id/tv_event_owner"
+                android:gravity="center_vertical"
+                tools:text="Event Quota: 209"
+                style="@style/TextAppearance.Dicoding.Headline2"/>
+
+            <View
+                android:id="@+id/separator_line_1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/tv_event_time"
+                app:layout_constraintStart_toStartOf="@+id/tv_event_title"
+                app:layout_constraintEnd_toStartOf="@id/btn_favorite" />
+
+            <ImageButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:padding="10dp"
+                app:layout_constraintTop_toTopOf="@id/separator_line_1"
+                app:layout_constraintBottom_toBottomOf="@id/separator_line_1"
+                app:layout_constraintStart_toEndOf="@id/separator_line_1"
+                app:layout_constraintEnd_toEndOf="@id/tv_event_title"
+                android:src="@drawable/ic_favorite_null"
+                style="@style/Widget.Dicoding.ImageButton"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/tv_event_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@+id/btn_favorite"
+                app:layout_constraintBottom_toTopOf="@id/btn_open_link"
+                app:layout_constraintStart_toStartOf="@id/tv_event_title"
+                app:layout_constraintEnd_toEndOf="@id/tv_event_title"
+                tools:text="Some description I think, Lorem Ipsum etc. and some more text"
+                style="@style/TextAppearance.Dicoding.Body"/>
+
+            <Button
+                android:id="@+id/btn_open_link"
+                android:layout_width="175dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/open_event_link"
+                app:layout_constraintTop_toBottomOf="@+id/tv_event_description"
+                app:layout_constraintStart_toStartOf="@id/tv_event_title"
+                app:layout_constraintEnd_toEndOf="@id/tv_event_title"
+                style="@style/Widget.Dicoding.Button"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

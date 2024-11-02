@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Dicoding" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
+
+        <!-- Other colors -->
+        <item name="colorSurface">@color/colorOnSurface</item>
+        <item name="colorOnSurface">@color/colorSurface</item>
+        <item name="android:colorBackground">@color/colorBackgroundDark</item>
+        <item name="colorOnBackground">@color/colorBackground</item>
+
+        <!-- Text appearance -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Dicoding.Headline</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Dicoding.Body</item>
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <!-- Customize the navigation bar color -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <!-- Use the custom toolbar style -->
+        <item name="toolbarStyle">@style/Widget.Dicoding.Toolbar</item>
+
+        <!-- Exclude buttons and images from theming -->
+        <item name="buttonStyle">@style/Widget.Dicoding.Button</item>
+        <item name="imageButtonStyle">@style/Widget.Dicoding.ImageButton</item>
+    </style>
+</resources>

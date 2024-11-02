@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:keep="@layout/error_retry">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_message_1"
+        style="@style/TextAppearance.Dicoding.Body"/>
+    <Button
+        android:id="@+id/btn_retry_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again"
+        style="@style/Widget.Dicoding.Button"/>
+</LinearLayout>
